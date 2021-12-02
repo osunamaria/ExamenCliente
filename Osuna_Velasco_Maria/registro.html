@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Javirro Te Lo Cuenta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/validacionRegistro.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <a href="Index.html"><img src="img/logo.PNG" class="logo"></a>
+            <h1>Javirro Te Lo Cuenta</h1>
+            <div class="redesSociales">
+                <a href="https://www.youtube.com/user/JavirroREC"><img src="img/youtube.png"></a>
+                <a href="https://www.instagram.com/javirrote/"><img src="img/instagram.png"></a>
+                <a href="https://twitter.com/Javirrorg"><img src="img/gorjeo.png"></a>
+                <a href="https://www.facebook.com/javi.romerogracia.9"><img src="img/facebook.png"></a>
+            </div>
+        </div>
+    </header>
+    <article>
+        <h2>Reg&iacute;strate</h2>
+        <form name="formulario" id="formulario" action="Index.html" method="get">
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><input type="text" id="nombre" name="nombre" class="datos"></td>
+                </tr>
+                <tr>
+                    <td><label for="apellidos">Apellidos</label></td>
+                    <td><input type="text" id="apellidos" name="apellidos" class="datos"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" id="email" name="email" class="datos"></td>
+                </tr>
+                <tr>
+                    <td><label for="usuario">Usuario</label></td>
+                    <td><input type="text" id="usuario" name="usuario" class="datos"></td>
+                </tr>
+                <tr>
+                    <td><label for="contrasena">Contrase&ntilde;a</label></td>
+                    <td><input type="text" id="contrasena" name="contrasena" class="datos"></td>
+                </tr>
+                <tr>
+                    <td><label for="solfeo">Nivel de solfeo</label></td>
+                    <td>
+                        <select name="solfeo" class="datos">
+                            <option value="bajo">Bajo</option>
+                            <option value="medio">Medio</option>
+                            <option value="alto">Alto</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pago">Método de pago</label></td>
+                    <td>
+                        <select name="pago" id="pago" class="datos">
+                            <option value="bizum">Bizum</option>
+                            <option value="paypal">Paypal</option>
+                            <option value="tarjeta">Tarjeta</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="numeroCuenta" class="labelCuenta">N&uacute;mero de tarjeta</label></td>
+                    <td><input type="text" id="numeroCuenta" name="numeroCuenta" class="cuenta"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Pagar" id="enviar" class="envio">
+        </form>
+        <div id="errores" class="errores"></div>
+    </article>
+</body>
+
+</html>
